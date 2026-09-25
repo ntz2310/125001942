@@ -6,19 +6,17 @@
   <meta name="description" content="Hội thảo Công nghệ Tech Summit 2026 - Nơi kết nối tri thức và giải pháp công nghệ tương lai. Đăng ký tham dự ngay hôm nay!">
   <title>Tech Summit 2026 - Trang Sự Kiện Công Nghệ</title>
   
-  <!-- Animate.css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- KHỐI 1: HEADER + MENU (Semantic & Flexbox & DarkMode Switch) -->
-  <header class="header-container">
+  <header class="header-container site-header">
     <div class="logo">
       <h1>TechSummit<span>2026</span></h1>
     </div>
     <nav class="main-nav">
-      <ul>
+      <ul class="main-menu">
         <li><a href="#home">Trang chủ</a></li>
         <li><a href="#schedule">Chương trình</a></li>
         <li><a href="#speakers">Diễn giả</a></li>
@@ -27,27 +25,25 @@
       </ul>
     </nav>
     <div class="theme-toggle">
-      <button id="theme-btn" class="animate__animated animate__fadeIn">🌙 Dark Mode</button>
+      <button id="theme-btn" class="theme-toggle-btn animate__animated animate__fadeIn"> Dark Mode</button>
     </div>
   </header>
 
   <main class="grid-layout">
-    <!-- KHỐI 2: BANNER (Flexbox Content & Animate.css) -->
+
     <section id="home" class="banner-section">
       <div class="banner-overlay">
         <h2 class="animate__animated animate__bounceInDown">HỘI THẢO CÔNG NGHỆ TECH SUMMIT 2026</h2>
-        <p class="banner-info">📅 Thời gian: 15/10/2026 | 📍 Địa điểm: Trung tâm Hội nghị Lạc Hồng</p>
+        <p class="banner-info"> Thời gian: 15/10/2026 | Địa điểm: Trung tâm Hội nghị Lạc Hồng</p>
         <p class="banner-desc">Cơ hội tiếp cận những xu hướng AI, Cloud và Cybersecurity mới nhất từ các chuyên gia hàng đầu.</p>
         <a href="#register" class="cta-btn animate__animated animate__pulse animate__infinite">Đăng ký tham dự ngay</a>
       </div>
     </section>
 
-    <!-- KHỐI 3: DANH SÁCH NỘI DUNG (Hình ảnh chuẩn Công nghệ - Đã fix link A và E) -->
     <section id="schedule" class="content-section">
       <h2 class="section-title">Chương Trình & Diễn Giả</h2>
       <div class="card-grid">
         
-        <!-- Bài 1: Generative AI -->
         <article class="card">
           <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Diễn giả Nguyễn Văn A - Generative AI">
           <div class="card-body">
@@ -57,7 +53,6 @@
           </div>
         </article>
 
-        <!-- Bài 2: Cloud Native -->
         <article class="card">
           <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80" alt="Diễn giả Trần Thị B - Cloud Computing">
           <div class="card-body">
@@ -67,7 +62,6 @@
           </div>
         </article>
 
-        <!-- Bài 3: Cybersecurity -->
         <article class="card">
           <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&q=80" alt="Diễn giả Lê Văn C - Bảo mật thông tin">
           <div class="card-body">
@@ -77,7 +71,6 @@
           </div>
         </article>
 
-        <!-- Bài 4: Web Development -->
         <article class="card">
           <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" alt="Diễn giả Phạm Minh D - Web Development">
           <div class="card-body">
@@ -87,7 +80,6 @@
           </div>
         </article>
 
-        <!-- Bài 5: CI/CD & DevOps -->
         <article class="card">
           <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Diễn giả Hoàng Anh E - DevOps">
           <div class="card-body">
@@ -97,7 +89,6 @@
           </div>
         </article>
 
-        <!-- Bài 6: Blockchain -->
         <article class="card">
           <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&q=80" alt="Diễn giả Đặng Văn F - Blockchain">
           <div class="card-body">
@@ -110,12 +101,10 @@
       </div>
     </section>
 
-    <!-- KHỐI 4: FORM ĐĂNG KÝ (Đủ 6 loại thẻ theo yêu cầu) -->
     <section id="register" class="form-section">
       <h2 class="section-title">Form Đăng Ký Tham Dự</h2>
       <form class="registration-form">
         
-        <!-- 1. input (text, email, tel, date) -->
         <div class="form-group">
           <label for="fullname">Họ và tên:</label>
           <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
@@ -141,7 +130,6 @@
           <input type="text" id="company" name="company" placeholder="Tên trường / công ty">
         </div>
 
-        <!-- 2. radio -->
         <div class="form-group">
           <label>Vai trò:</label>
           <div class="radio-group">
@@ -151,7 +139,6 @@
           </div>
         </div>
 
-        <!-- 3. select -->
         <div class="form-group">
           <label for="ticket">Loại vé:</label>
           <select id="ticket" name="ticket">
@@ -162,7 +149,6 @@
           </select>
         </div>
 
-        <!-- 4. checkbox -->
         <div class="form-group">
           <label>Phiên muốn tham dự:</label>
           <div class="checkbox-group">
@@ -172,13 +158,11 @@
           </div>
         </div>
 
-        <!-- 5. textarea -->
         <div class="form-group">
           <label for="questions">Câu hỏi cho diễn giả:</label>
           <textarea id="questions" name="questions" rows="4" placeholder="Nhập câu hỏi của bạn tại đây..."></textarea>
         </div>
 
-        <!-- 6. button -->
         <div class="form-actions">
           <button type="submit" class="btn btn-submit">Đăng ký</button>
           <button type="reset" class="btn btn-reset">Hủy</button>
@@ -188,7 +172,6 @@
     </section>
   </main>
 
-  <!-- KHỐI 5: FOOTER (Semantic & Responsive Flexbox) -->
   <footer id="location" class="footer-container">
     <div class="footer-content">
       <div class="footer-info">
@@ -206,15 +189,14 @@
     </div>
   </footer>
 
-  <!-- SCRIPT SWITCH DARK MODE (Sử dụng CSS Design System Variables) -->
   <script>
     const themeBtn = document.getElementById('theme-btn');
     themeBtn.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       if (document.body.classList.contains('dark-mode')) {
-        themeBtn.textContent = '☀️ Light Mode';
+        themeBtn.textContent = ' Light Mode';
       } else {
-        themeBtn.textContent = '🌙 Dark Mode';
+        themeBtn.textContent = ' Dark Mode';
       }
     });
   </script>
