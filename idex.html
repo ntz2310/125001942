@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hội thảo Công nghệ Tech Summit 2026 - Nơi kết nối tri thức và giải pháp công nghệ tương lai. Đăng ký tham dự ngay hôm nay!">
+  <title>Tech Summit 2026 - Trang Sự Kiện Công Nghệ</title>
+  
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- KHỐI 1: HEADER + MENU (Semantic & Flexbox & DarkMode Switch) -->
+  <header class="header-container">
+    <div class="logo">
+      <h1>TechSummit<span>2026</span></h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#schedule">Chương trình</a></li>
+        <li><a href="#speakers">Diễn giả</a></li>
+        <li><a href="#location">Địa điểm</a></li>
+        <li><a href="#register">Đăng ký</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-btn" class="animate__animated animate__fadeIn">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="grid-layout">
+    <!-- KHỐI 2: BANNER (Flexbox Content & Animate.css) -->
+    <section id="home" class="banner-section">
+      <div class="banner-overlay">
+        <h2 class="animate__animated animate__bounceInDown">HỘI THẢO CÔNG NGHỆ TECH SUMMIT 2026</h2>
+        <p class="banner-info">📅 Thời gian: 15/10/2026 | 📍 Địa điểm: Trung tâm Hội nghị Lạc Hồng</p>
+        <p class="banner-desc">Cơ hội tiếp cận những xu hướng AI, Cloud và Cybersecurity mới nhất từ các chuyên gia hàng đầu.</p>
+        <a href="#register" class="cta-btn animate__animated animate__pulse animate__infinite">Đăng ký tham dự ngay</a>
+      </div>
+    </section>
+
+    <!-- KHỐI 3: DANH SÁCH NỘI DUNG (Hình ảnh chuẩn Công nghệ - Đã fix link A và E) -->
+    <section id="schedule" class="content-section">
+      <h2 class="section-title">Chương Trình & Diễn Giả</h2>
+      <div class="card-grid">
+        
+        <!-- Bài 1: Generative AI -->
+        <article class="card">
+          <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Diễn giả Nguyễn Văn A - Generative AI">
+          <div class="card-body">
+            <span class="time">08:30 - 09:30</span>
+            <h3>Kỷ nguyên Generative AI & Ứng dụng</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Nguyễn Văn A</p>
+          </div>
+        </article>
+
+        <!-- Bài 2: Cloud Native -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80" alt="Diễn giả Trần Thị B - Cloud Computing">
+          <div class="card-body">
+            <span class="time">09:30 - 10:30</span>
+            <h3>Hạ tầng Cloud Native hiện đại</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Trần Thị B</p>
+          </div>
+        </article>
+
+        <!-- Bài 3: Cybersecurity -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&q=80" alt="Diễn giả Lê Văn C - Bảo mật thông tin">
+          <div class="card-body">
+            <span class="time">10:45 - 11:45</span>
+            <h3>Bảo mật hệ thống trong thời đại số</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Lê Văn C</p>
+          </div>
+        </article>
+
+        <!-- Bài 4: Web Development -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" alt="Diễn giả Phạm Minh D - Web Development">
+          <div class="card-body">
+            <span class="time">13:30 - 14:30</span>
+            <h3>Tương lai của Web Development</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Phạm Minh D</p>
+          </div>
+        </article>
+
+        <!-- Bài 5: CI/CD & DevOps -->
+        <article class="card">
+          <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Diễn giả Hoàng Anh E - DevOps">
+          <div class="card-body">
+            <span class="time">14:30 - 15:30</span>
+            <h3>Tối ưu hóa quy trình CI/CD</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Hoàng Anh E</p>
+          </div>
+        </article>
+
+        <!-- Bài 6: Blockchain -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&q=80" alt="Diễn giả Đặng Văn F - Blockchain">
+          <div class="card-body">
+            <span class="time">15:45 - 16:45</span>
+            <h3>Ứng dụng Blockchain thực tế</h3>
+            <p class="speaker"><strong>Diễn giả:</strong> Đặng Văn F</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- KHỐI 4: FORM ĐĂNG KÝ (Đủ 6 loại thẻ theo yêu cầu) -->
+    <section id="register" class="form-section">
+      <h2 class="section-title">Form Đăng Ký Tham Dự</h2>
+      <form class="registration-form">
+        
+        <!-- 1. input (text, email, tel, date) -->
+        <div class="form-group">
+          <label for="fullname">Họ và tên:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Điện thoại:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0901234567" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Ngày sinh:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Đơn vị công tác:</label>
+          <input type="text" id="company" name="company" placeholder="Tên trường / công ty">
+        </div>
+
+        <!-- 2. radio -->
+        <div class="form-group">
+          <label>Vai trò:</label>
+          <div class="radio-group">
+            <label for="role-student"><input type="radio" id="role-student" name="role" value="Sinh viên" checked> Sinh viên</label>
+            <label for="role-worker"><input type="radio" id="role-worker" name="role" value="Đi làm"> Đi làm</label>
+            <label for="role-teacher"><input type="radio" id="role-teacher" name="role" value="Giảng viên"> Giảng viên</label>
+          </div>
+        </div>
+
+        <!-- 3. select -->
+        <div class="form-group">
+          <label for="ticket">Loại vé:</label>
+          <select id="ticket" name="ticket">
+            <option value="Thường">Thường</option>
+            <option value="VIP">VIP</option>
+            <option value="Sinh viên">Sinh viên</option>
+            <option value="Nhóm">Nhóm</option>
+          </select>
+        </div>
+
+        <!-- 4. checkbox -->
+        <div class="form-group">
+          <label>Phiên muốn tham dự:</label>
+          <div class="checkbox-group">
+            <label for="session-1"><input type="checkbox" id="session-1" name="sessions" value="Generative AI"> Generative AI</label>
+            <label for="session-2"><input type="checkbox" id="session-2" name="sessions" value="Cloud Native"> Cloud Native</label>
+            <label for="session-3"><input type="checkbox" id="session-3" name="sessions" value="Cybersecurity"> Cybersecurity</label>
+          </div>
+        </div>
+
+        <!-- 5. textarea -->
+        <div class="form-group">
+          <label for="questions">Câu hỏi cho diễn giả:</label>
+          <textarea id="questions" name="questions" rows="4" placeholder="Nhập câu hỏi của bạn tại đây..."></textarea>
+        </div>
+
+        <!-- 6. button -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn-submit">Đăng ký</button>
+          <button type="reset" class="btn btn-reset">Hủy</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- KHỐI 5: FOOTER (Semantic & Responsive Flexbox) -->
+  <footer id="location" class="footer-container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Khoa CNTT - ĐH Lạc Hồng</h3>
+        <p><strong>Địa điểm tổ chức:</strong> Số 10 Huỳnh Văn Nghệ, P. Bửu Long, TP. Biên Hòa, Đồng Nai</p>
+        <p><strong>Email liên hệ:</strong> cttn@lhu.edu.vn</p>
+      </div>
+      <div class="footer-social">
+        <h4>Mạng xã hội</h4>
+        <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tech Summit Event. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT SWITCH DARK MODE (Sử dụng CSS Design System Variables) -->
+  <script>
+    const themeBtn = document.getElementById('theme-btn');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        themeBtn.textContent = '☀️ Light Mode';
+      } else {
+        themeBtn.textContent = '🌙 Dark Mode';
+      }
+    });
+  </script>
+</body>
+</html>
